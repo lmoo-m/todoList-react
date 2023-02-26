@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Secular+One&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home{
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  flex-direction: column;
+}
+
+.btnGroup{
+  margin-left: 150px;
+}
+
+.groupTask{
+  background-color: #B7C4CF;
+  width: 100%;
+  height: 70vh;
+}
+
+
+.wrapper{
+  box-shadow: 0 0  10px black;
+}
+
+.task{
+  box-shadow: 0 2px 7px black;
+  background: #0F3460;
+  border-radius: 20px;
+  width: 25%;
+  height: 25vh;
+}
+
+.task h1{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.secular{
+  font-family: 'Secular One', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.luckiest{
+  font-family: 'Luckiest Guy', cursive;
+}
+
+.taskName{
+  text-decoration: line-through;
+}
+
+@media (max-width: 968px){
+  .btnGroup{
+    width: 30%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+
+@media (max-width: 768px){
+  .btnGroup{
+    width: 35%;
   }
+  .wrapper{
+    width: 70%;
+  }
+}
+
+@media (max-width: 642px){
+  .btnGroup{
+    width: 40%;
+  }
+  .nameTask{
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 556px){
+  .btnGroup{
+    width: 25%;
+  }
+  .groupTask{
+    width: 90%;
+  }
+  .btnHome{
+    width: 90%;
+  }
+}
+
+@media (max-width: 476px){
+  .btnGroup{
+    width: 30%;
+  }
+  .wrapper{
+    width: 80%;
+   
+  }
+  .form{
+    width: 90%; 
+  }
+}
+
+@media (max-width: 392px){
+  .btnGroup{
+    width: 35%;
+  }
+  .groupTask{
+    width: 95%;
+  }
+  .wrapper{
+    width: 95%;
+  }
+  
+}
+
+.pp{
+  overflow-y: scroll;
 }
